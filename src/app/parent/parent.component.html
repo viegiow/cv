@@ -1,17 +1,33 @@
 <div style="display: flex; justify-content: center;">
     <img src="../assets/imgs/name.png" alt="First Name">
 </div>
-<mat-grid-list cols="3">
-    <mat-grid-tile>
-        <about-me></about-me>
-    </mat-grid-tile>
 
-    <mat-grid-tile>
-        FORMAÇÃO ACADEMICA
-    </mat-grid-tile>
-
-    <mat-grid-tile>
-        EXPERIENCIA
-    </mat-grid-tile>
-</mat-grid-list>
-
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5>Sobre mim</h5>
+                    <div>informações pessoais</div>
+                    <a href="/sobre-mim" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5>Formação Acadêmica</h5>
+                    <a href="/formacao" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5>Experiência Profissional</h5>
+                    <a href="/profissional" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
