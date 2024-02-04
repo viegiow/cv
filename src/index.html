@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark-purple">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -10,43 +10,68 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header class="mb-5">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="/">Home</a>
-                        <a class="nav-link" href="/sobre-mim">Sobre mim</a>
-                        <a class="nav-link" href="/formacao">Formação acadêmica</a>
-                        <a class="nav-link" href="/profissional">Experiência Profissional</a>
+                <a class="navbar-brand" href="#"><i class="bi bi-house"></i></a>
+                <i class="bi bi-list navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="navbar-item">
+                                <a class="nav-link" href="/sobre-mim">Sobre mim</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="/formacao">Formação acadêmica</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="/profissional">Experiência profissional</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <app-root></app-root>
+
     <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
         <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
             <div class="row" style="display: flex; justify-content: space-between;">
                 <div class="col-4">
                     <ul class="list-unstyled small">
                         <li>Desenvolvido por</li>
-                        <li>Giovanna Viecelli Barros</li>
+                        <li class="text-decoration-underline">Giovanna Viecelli Barros</li>
                     </ul>
                 </div>
-                
+
                 <div class="col-6">
                     <h5>Redes Sociais</h5>
                     <div class="row">
-                        <div class="col-4"><a href="https://www.linkedin.com/in/giovanna-viecelli-barros/">Linkedin</a></div>
-                        <div class="col-4"><a href="https://github.com/viegiow">Github</a></div>
-                        <div class="col-4"><a href="https://www.instagram.com/ehmole.gio/">Instagram</a></div>
+                        <div class="col-4">
+                            <i class="bi bi-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/giovanna-viecelli-barros/">Linkedin</a>
+                        </div>
+                        <div class="col-4">
+                            <i class="bi bi-github"></i>
+                            <a href="https://github.com/viegiow">Github</a>
+                        </div>
+                        <div class="col-4">
+                            <i class="bi bi-instagram"></i>
+                            <a href="https://www.instagram.com/ehmole.gio/">Instagram</a>
+                        </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </footer>
